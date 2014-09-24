@@ -1,10 +1,11 @@
 {
   "name": "generator-coronasdk",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A generator fo Corona SDK proyects",
-  "main": "index.js",
+  "main": "app/index.js",
+  "repository": "Arlefreak/generator-coronasdk",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "generator",
@@ -13,10 +14,22 @@
     "proyect",
     "yeoman-generator"
   ],
-  "author": "Arlefreak",
+  "author": {
+    "name": "Arlefreak",
+    "email": "arlefreak@gmail.com",
+    "url": "http://www.arlefreak.com/"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^0.5.1",
     "yeoman-generator": "^0.17.6"
+  },
+  "files": [
+    "app",
+    "model",
+    "scene"
+  ],
+  "peerDependencies": {
+    "yo": ">=1.0.0"
   }
 }
