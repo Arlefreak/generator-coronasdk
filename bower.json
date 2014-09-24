@@ -1,0 +1,28 @@
+{
+  "name": "generator-coronasdk",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Arlefreak/generator-coronasdk",
+  "authors": [
+    "Arlefreak <arlefreak@gmail.com>"
+  ],
+  "keywords": [
+    "generator",
+    "coronasdk",
+    "game",
+    "proyect",
+    "yeoman-generator"
+  ],
+  "description": "A generator fo Corona SDK proyects",
+  "main": "app/index.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
