@@ -7,13 +7,12 @@ audio.setSessionProperty(audio.MixMode, audio.AmbientMixMode)
 -- Require
 local cacharro = require("bower_components.cacharro.cacharro")
 local middleclass = require("bower_components.middleclass.middleclass")
-local inspect = require("bower_components.inspect.inspect")
 local ads = require("ads")
 local storyboard = require("storyboard")
 local gameNetwork = require("gameNetwork")
 local analytics = require("analytics")
 
-dbconfig.init()
+--dbconfig.init()
 timesPlayed = 0
 
 --Random numbers now more random
@@ -38,7 +37,7 @@ else
 		local msg = event.response
 		if event.isError then
 			-- Failed to receive an ad, we print the error message returned from the library.
-			log(msg)
+			--log(msg)
 		end
 	end
 
@@ -94,7 +93,6 @@ else
 end
 
 local function onSystemEvent( event )
-	log( "System event name and type: " .. event.name, event.type )
 	if event.type == "applicationExit" or event.type == "applicationSuspend" then
 		system.cancelNotification( )
 		local futureTime = 3600 * 24
