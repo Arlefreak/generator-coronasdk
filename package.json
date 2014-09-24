@@ -1,0 +1,22 @@
+{
+  "name": "generator-coronasdk",
+  "version": "1.0.0",
+  "description": "A generator fo Corona SDK proyects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "generator",
+    "coronasdk",
+    "game",
+    "proyect",
+    "yeoman-generator"
+  ],
+  "author": "Arlefreak",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "yeoman-generator": "^0.17.6"
+  }
+}
