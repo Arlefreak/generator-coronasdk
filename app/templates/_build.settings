@@ -2,10 +2,10 @@ settings = {
 	plugins =
 	{
 		-- key is the name passed to Lua's 'require()'
-		["CoronaProvider.ads.admob"] = {
+		--["CoronaProvider.ads.admob"] = {
 			-- required
-			publisherId = "com.coronalabs.<%= _.slugify(projectName) %>",
-		},
+			--publisherId = "com.coronalabs.<%= _.slugify(projectName) %>",
+		--},
 
 		-- key is the name passed to Lua's 'require()'
 		--["CoronaProvider.gameNetwork.google"] = {

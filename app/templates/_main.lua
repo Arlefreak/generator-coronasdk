@@ -8,7 +8,7 @@ audio.setSessionProperty(audio.MixMode, audio.AmbientMixMode)
 local cacharro = require("bower_components.cacharro.cacharro")
 local middleclass = require("bower_components.middleclass.middleclass")
 local ads = require("ads")
-local storyboard = require("storyboard")
+local composer = require( "composer" )
 local gameNetwork = require("gameNetwork")
 local analytics = require("analytics")
 
@@ -30,7 +30,7 @@ local halfViewY = display.viewableContentHeight / 2
 
 if cacharro.isSimulator then
 	audio.setVolume(0)
-	storyboard.gotoScene("src.scenes.home")
+	composer.gotoScene("src.scenes.home")
 else
 	-- ADDS
 	local function adListener( event )
@@ -88,7 +88,7 @@ else
 		display.remove( splash )
 		splash = nil
 		back = nil
-		storyboard.gotoScene("src.scenes.home")
+		composer.gotoScene("src.scenes.home")
 	end)
 end
 
